@@ -29,4 +29,8 @@ public class GithubAccount {
     public String setAccountName(String newAccountName) {
         return this.accountName = newAccountName;
     }
+
+    public int repoCount() {
+        return this.repositories.size();
+    }
 }
