@@ -13,4 +13,8 @@ public class GithubAccount {
         this.repositories = new ArrayList<>();
         this.accountType = accountType;
     }
+
+    public String getUserName() {
+        return this.userName;
+    }
 }
