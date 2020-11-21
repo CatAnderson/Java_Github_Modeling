@@ -20,6 +20,11 @@ public class RepositoryTest {
     }
 
     @Test
+    public void canChangeName(){
+        assertEquals("JAVA_Github_Modelling", repository.setName());
+    }
+
+    @Test
     public void hasDescription() {
         assertEquals("make a representation of github using Java", repository.getDescription());
     }

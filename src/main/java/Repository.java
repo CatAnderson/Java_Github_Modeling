@@ -20,4 +20,8 @@ public class Repository {
     public String getDescription() {
         return this.description;
     }
+
+    public String setDescription(String newDescription) {
+        return this.description = newDescription;
+    }
 }
