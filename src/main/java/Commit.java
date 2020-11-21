@@ -1,8 +1,7 @@
 public class Commit {
 
     private String description;
-    private String uniqueId;
-
+    private final String uniqueId;
 
 
     public Commit(String description, String uniqueId){
@@ -10,13 +9,13 @@ public class Commit {
         this.uniqueId = uniqueId;
     }
 
-
     public String getDescription() {
         return this.description;
     }
 
-
     public String setDescription(String newDescription) {
         return this.description = newDescription;
     }
+
+
 }

@@ -22,4 +22,9 @@ public class CommitTest {
         assertEquals("added some css styling & changed html", commit.setDescription("added some css styling & changed html"));
     }
 
+    @Test
+    public void hasUniqueId(){
+        assertEquals("2de56ffs781fc99dh9", commit.getUniqueId());
+    }
+
 }
