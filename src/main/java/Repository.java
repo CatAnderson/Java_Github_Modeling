@@ -59,4 +59,9 @@ public class Repository {
         }
         return foundCommit;
     }
+
+//    public ArrayList<Commit> getCommitArray(Commit commit) {
+//        this.commits.remove(commit);
+//        return this.commits;
+//    }
 }

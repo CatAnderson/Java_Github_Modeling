@@ -1,18 +1,22 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import java.util.ArrayList;
+
+import static org.junit.Assert.*;
 
 public class RepositoryTest {
 
     private Commit commit;
     private Commit commit2;
+    private Commit commit3;
     private Repository repository;
 
     @Before
     public void before() {
         commit = new Commit("added some css styling", "2de56ffs781fc99dh9");
         commit2 = new Commit("added some css styling & html", "2de56d44o2483302j3");
+        commit3 = new Commit("screwed up...", "2de56d4568db3d3ks983");
         repository = new Repository("Java_Github_Modelling", "make a representation of github using Java", RepoType.PUBLIC);
     }
 
@@ -71,4 +75,13 @@ public class RepositoryTest {
         repository.addCommit(commit2);
         assertEquals(commit2, repository.getCommitByUniqueId("2de56d44o2483302j3"));
     }
+
+//    @Test
+//    public void canRollBackCommits(){
+//        repository.addCommit(commit);
+//        repository.addCommit(commit2);
+//        repository.addCommit(commit3);
+//        assertArrayEquals([commit, commit2], repository.getCommitArray(commit2));
+//
+//    }
 }
