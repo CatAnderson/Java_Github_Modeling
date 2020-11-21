@@ -34,4 +34,8 @@ public class RepositoryTest {
         assertEquals("making a representation of github using Java", repository.setDescription("making a representation of github using Java"));
     }
 
+    @Test
+    public void hasRepoType(){
+        assertEquals(RepoType.PUBLIC, repository.getRepoType());
+    }
 }
