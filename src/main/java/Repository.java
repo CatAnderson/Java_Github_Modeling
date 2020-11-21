@@ -11,6 +11,7 @@ public class Repository {
         this.name = name;
         this.description = description;
         this.repoType = repoType;
+        this.commits = new ArrayList<>();
     }
 
     public String getName() {
@@ -35,5 +36,9 @@ public class Repository {
 
     public RepoType setRepoType(RepoType repoType) {
         return this.repoType = repoType;
+    }
+
+    public int commitCount() {
+        return this.commits.size();
     }
 }
