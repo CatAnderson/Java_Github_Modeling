@@ -38,4 +38,10 @@ public class RepositoryTest {
     public void hasRepoType(){
         assertEquals(RepoType.PUBLIC, repository.getRepoType());
     }
+
+    @Test
+    public void canChangeRepoType(){
+        assertEquals(RepoType.PRIVATE, repository.setRepoType(RepoType.PRIVATE));
+    }
+
 }
