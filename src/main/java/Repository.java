@@ -12,4 +12,8 @@ public class Repository {
         this.description = description;
         this.repoType = repoType;
     }
+
+    public String getName() {
+        return this.name;
+    }
 }
