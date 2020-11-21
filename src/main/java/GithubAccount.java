@@ -25,4 +25,8 @@ public class GithubAccount {
     public String getAccountName() {
         return this.accountName;
     }
+
+    public String setAccountName(String newAccountName) {
+        return this.accountName = newAccountName;
+    }
 }

@@ -40,4 +40,9 @@ public class GithubAccountTest {
         assertEquals("CA1990", account.getAccountName());
     }
 
+    @Test
+    public void canChangeAccountName(){
+        assertEquals("CAT1990", account.setAccountName("CAT1990"));
+    }
+
 }
