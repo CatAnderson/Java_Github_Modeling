@@ -55,4 +55,10 @@ public class RepositoryTest {
         assertEquals(1, repository.commitCount());
     }
 
+    @Test
+    public void canRemoveCommit(){
+        repository.addCommit(commit);
+        repository.removeCommit();
+        assertEquals(0, repository.commitCount());
+    }
 }
