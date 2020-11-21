@@ -65,10 +65,10 @@ public class RepositoryTest {
         assertEquals(0, repository.commitCount());
     }
 
-//    @Test
-//    public void canGetCommitByUniqueId(){
-//        repository.addCommit(commit);
-//        repository.addCommit(commit2);
-//        assertEquals(commit2, repository.getCommitByUniqueId("2de56d44o2483302j3"));
-//    }
+    @Test
+    public void canGetCommitByUniqueId(){
+        repository.addCommit(commit);
+        repository.addCommit(commit2);
+        assertEquals(commit2, repository.getCommitByUniqueId("2de56d44o2483302j3"));
+    }
 }

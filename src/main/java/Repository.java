@@ -50,10 +50,13 @@ public class Repository {
         this.commits.remove(0);
     }
 
-//    public Commit getCommitByUniqueId(String Id) {
-//        for (Commit commits : this.commits) {
-//            if (commits.getUniqueId().equals(Id)) ;
-//        }
-//        return commits.get(Id.);
-//    }
+    public  Commit getCommitByUniqueId(String Id) {
+        Commit foundCommit = null;
+        for (Commit commit : this.commits) {
+            if (commit.getUniqueId().equals(Id)) {
+                foundCommit = commit;
+            }
+        }
+        return foundCommit;
+    }
 }
