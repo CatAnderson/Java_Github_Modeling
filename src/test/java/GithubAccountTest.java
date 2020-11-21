@@ -55,4 +55,9 @@ public class GithubAccountTest {
         account.addRepos(repo1);
         assertEquals(1, account.repoCount());
     }
+
+    @Test
+    public void hasAccountType(){
+        assertEquals(AccountType.FREE, account.getAccountType());
+    }
 }
