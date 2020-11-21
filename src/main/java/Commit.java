@@ -16,4 +16,7 @@ public class Commit {
     }
 
 
+    public String setDescription(String newDescription) {
+        return this.description = newDescription;
+    }
 }
