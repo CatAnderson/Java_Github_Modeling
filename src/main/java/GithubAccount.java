@@ -17,4 +17,8 @@ public class GithubAccount {
     public String getUserName() {
         return this.userName;
     }
+
+    public String setUserName(String newUserName) {
+        return this.userName = newUserName;
+    }
 }
