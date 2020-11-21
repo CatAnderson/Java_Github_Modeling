@@ -41,4 +41,8 @@ public class Repository {
     public int commitCount() {
         return this.commits.size();
     }
+
+    public void addCommit(Commit commit) {
+        this.commits.add(commit);
+    }
 }

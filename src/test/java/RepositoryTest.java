@@ -51,7 +51,7 @@ public class RepositoryTest {
 
     @Test
     public void hasCommits(){
-        repository.addCommit();
+        repository.addCommit(commit);
         assertEquals(1, repository.commitCount());
     }
 
