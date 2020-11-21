@@ -45,4 +45,8 @@ public class Repository {
     public void addCommit(Commit commit) {
         this.commits.add(commit);
     }
+
+    public void removeCommit() {
+        this.commits.remove(0);
+    }
 }
