@@ -45,4 +45,9 @@ public class GithubAccountTest {
         assertEquals("CAT1990", account.setAccountName("CAT1990"));
     }
 
+    @Test
+    public void hasNoRepos(){
+        assertEquals(0, account.repoCount());
+    }
+
 }
