@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class RepositoryTest {
 
@@ -11,5 +14,8 @@ public class RepositoryTest {
         repository = new Repository("Java_Github_Modelling", "make a representation of github using Java", RepoType.PUBLIC);
     }
 
-
+    @Test
+    public void hasName(){
+        assertEquals("Java_Github_Modelling", repository.getName());
+    }
 }
