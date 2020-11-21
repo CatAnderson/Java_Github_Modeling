@@ -50,4 +50,9 @@ public class GithubAccountTest {
         assertEquals(0, account.repoCount());
     }
 
+    @Test
+    public void hasRepos(){
+        account.addRepos(repo1);
+        assertEquals(1, account.repoCount());
+    }
 }
