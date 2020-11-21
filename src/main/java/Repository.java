@@ -29,5 +29,7 @@ public class Repository {
         return this.description = newDescription;
     }
 
-
+    public RepoType getRepoType() {
+        return this.repoType;
+    }
 }
