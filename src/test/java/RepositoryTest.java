@@ -18,4 +18,9 @@ public class RepositoryTest {
     public void hasName(){
         assertEquals("Java_Github_Modelling", repository.getName());
     }
+
+    @Test
+    public void hasDescription(){
+        assertEquals("make a representation of github using Java", repository.getDescription());
+    }
 }
