@@ -30,5 +30,9 @@ public class GithubAccountTest {
         assertEquals("Cat Anderson", account.getUserName());
     }
 
+    @Test
+    public void canChangeUserName(){
+        assertEquals("Catherine Anderson", account.setUserName("Catherine Anderson"));
+    }
 
 }
