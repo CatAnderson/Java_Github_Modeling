@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class GithubAccountTest {
 
@@ -16,13 +19,16 @@ public class GithubAccountTest {
         commit2 = new Commit("added some css styling & html", "2de56d44o2483302j3");
         repo1 = new Repository("Java_Github_Modelling", "make a representation of github using Java", RepoType.PUBLIC);
         repo2 = new Repository("Watch_this_Space", "space app", RepoType.PRIVATE);
-        account = new GithubAccount("CatAnderson", "CA1990", AccountType.FREE);
+        account = new GithubAccount("Cat Anderson", "CA1990", AccountType.FREE);
 
         repo1.addCommit(commit1);
         repo1.addCommit(commit2);
     }
 
-
+    @Test
+    public void hasUserName(){
+        assertEquals("Cat Anderson", account.getUserName());
+    }
 
 
 }
