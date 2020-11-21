@@ -17,5 +17,7 @@ public class Commit {
         return this.description = newDescription;
     }
 
-
+    public String getUniqueId() {
+        return this.uniqueId;
+    }
 }
