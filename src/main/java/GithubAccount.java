@@ -37,4 +37,8 @@ public class GithubAccount {
     public void addRepos(Repository repo) {
         this.repositories.add(repo);
     }
+
+    public AccountType getAccountType() {
+        return this.accountType;
+    }
 }
