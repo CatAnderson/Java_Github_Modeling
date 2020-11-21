@@ -17,4 +17,9 @@ public class CommitTest {
         assertEquals("added some css styling", commit.getDescription());
     }
 
+    @Test
+    public void canChangeDescription(){
+        assertEquals("added some css styling & changed html", commit.setDescription("added some css styling & changed html"));
+    }
+
 }
