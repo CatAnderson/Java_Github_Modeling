@@ -44,4 +44,9 @@ public class RepositoryTest {
         assertEquals(RepoType.PRIVATE, repository.setRepoType(RepoType.PRIVATE));
     }
 
+    @Test
+    public void hasNoCommits(){
+        assertEquals(0, repository.commitCount());
+    }
+
 }

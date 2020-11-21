@@ -32,4 +32,8 @@ public class Repository {
     public RepoType getRepoType() {
         return this.repoType;
     }
+
+    public RepoType setRepoType(RepoType repoType) {
+        return this.repoType = repoType;
+    }
 }
