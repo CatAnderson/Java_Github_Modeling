@@ -6,11 +6,13 @@ import static org.junit.Assert.assertEquals;
 public class RepositoryTest {
 
     private Commit commit;
+    private Commit commit2;
     private Repository repository;
 
     @Before
     public void before() {
         commit = new Commit("added some css styling", "2de56ffs781fc99dh9");
+        commit2 = new Commit("added some css styling & html", "2de56d44o2483302j3");
         repository = new Repository("Java_Github_Modelling", "make a representation of github using Java", RepoType.PUBLIC);
     }
 
@@ -52,7 +54,8 @@ public class RepositoryTest {
     @Test
     public void hasCommits(){
         repository.addCommit(commit);
-        assertEquals(1, repository.commitCount());
+        repository.addCommit(commit2);
+        assertEquals(2, repository.commitCount());
     }
 
     @Test
@@ -61,4 +64,11 @@ public class RepositoryTest {
         repository.removeCommit();
         assertEquals(0, repository.commitCount());
     }
+
+//    @Test
+//    public void canGetCommitByUniqueId(){
+//        repository.addCommit(commit);
+//        repository.addCommit(commit2);
+//        assertEquals(commit2, repository.getCommitByUniqueId("2de56d44o2483302j3"));
+//    }
 }

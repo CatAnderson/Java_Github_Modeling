@@ -49,4 +49,11 @@ public class Repository {
     public void removeCommit() {
         this.commits.remove(0);
     }
+
+//    public Commit getCommitByUniqueId(String Id) {
+//        for (Commit commits : this.commits) {
+//            if (commits.getUniqueId().equals(Id)) ;
+//        }
+//        return commits.get(Id.);
+//    }
 }
