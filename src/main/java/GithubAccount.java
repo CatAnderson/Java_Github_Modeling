@@ -33,4 +33,8 @@ public class GithubAccount {
     public int repoCount() {
         return this.repositories.size();
     }
+
+    public void addRepos(Repository repo) {
+        this.repositories.add(repo);
+    }
 }
