@@ -65,4 +65,11 @@ public class GithubAccountTest {
     public void updateAccountType(){
         assertEquals(AccountType.PRO, account.setAccountType(AccountType.PRO));
     }
+
+    @Test
+    public void getRepoByName(){
+        account.addRepos(repo1);
+        account.addRepos(repo2);
+        assertEquals(repo2, account.getRepoByName("Watch_this_Space"));
+    }
 }
