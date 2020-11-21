@@ -21,7 +21,7 @@ public class RepositoryTest {
 
     @Test
     public void canChangeName(){
-        assertEquals("JAVA_Github_Modelling", repository.setName());
+        assertEquals("JAVA_Github_Modelling", repository.setName("JAVA_Github_Modelling"));
     }
 
     @Test

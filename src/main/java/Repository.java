@@ -17,6 +17,10 @@ public class Repository {
         return this.name;
     }
 
+    public String setName(String newName) {
+        return this.name = newName;
+    }
+
     public String getDescription() {
         return this.description;
     }
@@ -24,4 +28,6 @@ public class Repository {
     public String setDescription(String newDescription) {
         return this.description = newDescription;
     }
+
+
 }
