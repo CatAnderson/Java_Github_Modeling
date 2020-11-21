@@ -45,4 +45,14 @@ public class GithubAccount {
     public AccountType setAccountType(AccountType newAccountType) {
         return this.accountType = newAccountType;
     }
+
+    public Repository getRepoByName(String repoName) {
+        Repository foundRepo = null;
+        for (Repository repository : this.repositories){
+            if (repository.getName().equals(repoName)) {
+                foundRepo = repository;
+            }
+        }
+        return foundRepo;
+    }
 }
